@@ -8,9 +8,9 @@ import SelectedPlayers from './Components/SelectedPlayers'
 
 import { ToastContainer,toast,Bounce } from 'react-toastify';
 
-// Put players.json in the public/ folder
+//players.json in the public/ folder
 const loadPlayers = async () => {
-    const url = `${import.meta.env.BASE_URL}players.json`; // ✅ works locally and on GH Pages
+    const url = `${import.meta.env.BASE_URL}players.json`;
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
     return res.json();
