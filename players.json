@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Trent Alexander-Arnold",
+    "age": 26,
+    "position": "Right-Back",
+    "club": "Real Madrid",
+    "nationality": "England",
+    "market_value": 75000000,
+    "img": "https://i.ibb.co/4nXHgyH7/taa.jpg"
+  },
+  {
+    "name": "Raphinha",
+    "age": 28,
+    "position": "Right Winger",
+    "club": "Barcelona",
+    "nationality": "Brazil",
+    "market_value": 60000000,
+    "img": "https://i.ibb.co/6RRY4jnB/raphinha.jpg"
+  },
+  {
+    "name": "Erling Haaland",
+    "age": 24,
+    "position": "Centre-Forward",
+    "club": "Manchester City",
+    "nationality": "Norway",
+    "market_value": 200000000,
+    "img": "https://i.ibb.co/0RzXnc14/haland.jpg"
+  },
+  {
+    "name": "Vinicius Junior",
+    "age": 24,
+    "position": "Left Winger",
+    "club": "Real Madrid",
+    "nationality": "Brazil",
+    "market_value": 170000000,
+    "img": "https://i.ibb.co/v6qGJXP7/vini.jpg"
+  },
+  {
+    "name": "Kylian Mbappé",
+    "age": 26,
+    "position": "Striker",
+    "club": "Real Madrid",
+    "nationality": "France",
+    "market_value": 180000000,
+    "img": "https://i.ibb.co/r27PNPzw/mbappe.jpg"
+  },
+  {
+    "name": "Jude Bellingham",
+    "age": 21,
+    "position": "Attacking Midfield",
+    "club": "Real Madrid",
+    "nationality": "England",
+    "market_value": 180000000,
+    "img": "https://i.ibb.co/HTw8HQPp/bellingham.jpg"
+  },
+  {
+    "name": "Bukayo Saka",
+    "age": 23,
+    "position": "Right Winger",
+    "club": "Arsenal",
+    "nationality": "England",
+    "market_value": 145000000,
+    "img": "https://i.ibb.co/CKKwh1ny/saka.jpg"
+  },
+  {
+    "name": "Federico Valverde",
+    "age": 27,
+    "position": "Central Midfield",
+    "club": "Real Madrid",
+    "nationality": "Uruguay",
+    "market_value": 130000000,
+    "img": "https://i.ibb.co/7JCdk66n/valverde.jpg"
+  },
+  {
+    "name": "Pedri",
+    "age": 22,
+    "position": "Central Midfield",
+    "club": "Barcelona",
+    "nationality": "Spain",
+    "market_value": 120000000,
+    "img": "https://i.ibb.co/GXDvhwr/pedri.jpg"
+  },
+  {
+    "name": "Declan Rice",
+    "age": 26,
+    "position": "Defensive Midfield",
+    "club": "Arsenal",
+    "nationality": "England",
+    "market_value": 110000000,
+    "img": "https://i.ibb.co/MkN80tXw/declan-Rice.jpg"
+  },
+  {
+    "name": "Rodrygo",
+    "age": 24,
+    "position": "Left Winger",
+    "club": "Real Madrid",
+    "nationality": "Brazil",
+    "market_value": 100000000,
+    "img": "https://i.ibb.co/0ynbMZ2f/rodrygo.jpg"
+  },
+  {
+    "name": "Martin Odegaard",
+    "age": 26,
+    "position": "Attacking Midfield",
+    "club": "Arsenal",
+    "nationality": "Norway",
+    "market_value": 100000000,
+    "img": "https://i.ibb.co/TMx8gpQZ/odegard.jpg"
+  }
+]
