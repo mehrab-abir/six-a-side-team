@@ -8,17 +8,20 @@ import SelectedPlayers from './Components/SelectedPlayers'
 
 import { ToastContainer,toast,Bounce } from 'react-toastify';
 
-const loadPlayers = async () =>{
-        const response = await fetch('/players.json');
-        return response.json(); 
-    }
+// Put players.json in the public/ folder
+const loadPlayers = async () => {
+    const url = `${import.meta.env.BASE_URL}players.json`; // ✅ works locally and on GH Pages
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
+    return res.json();
+};
 
 const playersPromise = loadPlayers();
 
 function App() {
 
   const [active, setActive] = useState(true);
-  const [availableBalance, setAvailableBalance] = useState(100000);
+  const [availableBalance, setAvailableBalance] = useState(1000000000);
 
   //show selected players
   const [selectedPlayers, setSelectedPlayers] = useState([]);

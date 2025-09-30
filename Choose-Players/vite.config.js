@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),tailwindcss()],
-   base: "/six-a-side-team/",
+  base: "/six-a-side-team/",
+  plugins: [react(),tailwindcss()]
 })
