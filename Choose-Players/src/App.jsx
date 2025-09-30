@@ -6,6 +6,8 @@ import Footer from './Components/Footer'
 import { Suspense, useState } from 'react'
 import SelectedPlayers from './Components/SelectedPlayers'
 
+import { ToastContainer,toast,Bounce } from 'react-toastify';
+
 const loadPlayers = async () =>{
         const response = await fetch('/players.json');
         return response.json(); 
@@ -16,15 +18,20 @@ const playersPromise = loadPlayers();
 function App() {
 
   const [active, setActive] = useState(true);
-  const [availableBalance, setAvailableBalance] = useState(60000000000);
+  const [availableBalance, setAvailableBalance] = useState(100000);
 
   //show selected players
   const [selectedPlayers, setSelectedPlayers] = useState([]);
 
   //passed to other components using props
   const handleSelection = (player)=>{
+    if(selectedPlayers.length === 6){
+      toast("You've already selected 6 players");
+      return;
+    }
+
     if(player.market_value > availableBalance){
-      alert("Not enough balance to buy him 😥");
+      toast("Available balance is not enough");
       return;
     }
     setAvailableBalance(availableBalance - player.market_value);
@@ -53,7 +60,7 @@ function App() {
 
       <div className='flex flex-col md:flex-row justify-between items-center w-[90%] mx-auto mt-5'>
 
-        <h1 className='text-2xl font-bold mb-4 md:mb-0 mt-8 md:mt-0'>{active === true ? "Available Players" : `Selected Players (${selectedPlayers.length}/6) `}</h1>
+        <h1 className='text-3xl font-bold mb-4 md:mb-0 mt-8 md:mt-0'>{active === true ? "Available Players" : `Selected Players (${selectedPlayers.length}/6) `}</h1>
 
         <div className='flex'>
 
@@ -74,6 +81,19 @@ function App() {
         <button className='btn btn-base mb-6'><a href="#header">Back to Top ↥</a></button>
       </div>
       <Footer></Footer>
+      <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+            transition={Bounce}
+            />
     </div>
   )
 }

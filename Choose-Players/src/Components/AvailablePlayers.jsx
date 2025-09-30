@@ -15,7 +15,9 @@ const AvailablePlayers = ({playersPromise,handleSelection,selectedPlayers}) => {
                     /* to determine if a player is already selected, if true, the button will get disabled in the PlayerCard component, it is passed there as prop */
                     const selected = selectedPlayers.some(p => p.name === player.name); //true/false
 
-                    return <PlayerCard player={player} handleSelection={handleSelection} selected={selected}></PlayerCard>
+                    /* checking if this 'player' exists in the 'selectedPlayer' array, if true, 'selected' will be 'true' for this player and then button will be impact accordingly in the PlayerCard component*/
+
+                    return <PlayerCard key={player.name} player={player} handleSelection={handleSelection} selected={selected}></PlayerCard>
                 })
             }
         </div>

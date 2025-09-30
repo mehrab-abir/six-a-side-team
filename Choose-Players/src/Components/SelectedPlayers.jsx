@@ -11,7 +11,7 @@ const SelectedPlayers = ({selectedPlayers,removeFromSelection}) => {
                 selectedPlayers.length === 0 ? noSelection : 
                 selectedPlayers.map(player =>{
                     return (
-                        <div className='flex justify-between items-center w-full mt-6 shadow-sm p-3'>
+                        <div key={player.name} className='flex justify-between items-center w-full mt-6 shadow-sm p-3'>
                             <div className='flex items-center'>
                                 <img src={player.img} alt="" className='w-[100px] rounded-2xl' />
                                 <div className='flex flex-col items-start ml-4'>
