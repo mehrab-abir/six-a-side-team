@@ -1,4 +1,3 @@
-
 import './App.css'
 import Navbar from './Components/Navbar'
 import AvailablePlayers from './Components/AvailablePlayers'
@@ -44,7 +43,7 @@ function App() {
   }
 
   const removeFromSelection = (playerToDelete) =>{
-    // console.log("Player to be removed: ",playerName)
+    // console.log("Player to be removed: ",playerToDelete)
     const indexTodelete = selectedPlayers.findIndex(player => player.name === playerToDelete.name);
 
     selectedPlayers.splice(indexTodelete,1);
